@@ -36,7 +36,6 @@
 ---
 ## 📚Reference(s)
 
-- (🌍`behabit.tistory.com`: Windows alias/단축 커맨드 설정하기)[link01]
-
+- [🌍`behabit.tistory.com`: Windows alias/단축 커맨드 설정하기][link01]
 
 [link01]: https://behabit.tistory.com/m/entry/Windows-alias%EB%8B%A8%EC%B6%95-%EC%BB%A4%EB%A7%A8%EB%93%9C-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0
