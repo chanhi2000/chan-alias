@@ -8,7 +8,8 @@ DOSKEY sublime=sublime_text $*
 DOSKEY alias=notepad %USERPROFILE%\alias.cmd
 :: ADB 및 안드로이드 관련
 DOSKEY scrcpyDefault=scrcpy -m 1024 --always-on-top
+DOSKEY scrcpyRec=scrcpy -m 1024 --always-on-top --show-touches
 DOSKEY KillTestbed=adb shell am force-stop kr.go.mobile.testbed.iff
 
 :: 개발환경 구성
-DOSKEY openWspAndroidWeb2=code %WspHomeAndroidWeb2%
+DOSKEY openWspHomeAndroidWeb2=code %WspHomeAndroidWeb2%

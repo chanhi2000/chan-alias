@@ -31,7 +31,10 @@
 |`ls`|현 경로의 파일목록 출력|
 |`sublime`|Sublime Text 호출|
 |`scrcpyDefault`|내가 원하는 설정값의 scrcpy호출|
-|`KillTestbed`|모바일전자정부지원센터 Testbed인스턴스를 죽인다|
+|`scrcpyRec`|화면녹화용 scrcpy호출|
+|||
+|`killTestbed`|모바일전자정부지원센터 Testbed인스턴스를 죽인다|
+|`openWspHomeAndroidWeb2`|온-나라 2.0 웹프론트 vscode로 개발환경 열기|
 
 ---
 ## 📚Reference(s)
