@@ -34,7 +34,8 @@
 |`scrcpyRec`|화면녹화용 scrcpy호출|
 |||
 |`killTestbed`|모바일전자정부지원센터 Testbed인스턴스를 죽인다|
-|`openWspHomeAndroidWeb2`|온-나라 2.0 웹프론트 vscode로 개발환경 열기|
+|`openWspHomeAndroidWeb1`|온-나라 1.0 웹프론트 vscode로 개발환경 열기 (환경변수 `WspHomeAndroidWeb1` 경로 지정필요)|
+|`openWspHomeAndroidWeb2`|온-나라 2.0 웹프론트 vscode로 개발환경 열기 (환경변수 `WspHomeAndroidWeb2` 경로 지정필요)|
 
 ---
 ## 📚Reference(s)

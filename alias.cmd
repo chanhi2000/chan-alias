@@ -12,4 +12,5 @@ DOSKEY scrcpyRec=scrcpy -m 1024 --always-on-top --show-touches
 DOSKEY KillTestbed=adb shell am force-stop kr.go.mobile.testbed.iff
 
 :: 개발환경 구성
+DOSKEY openWspHomeAndroidWeb1=code %WspHomeAndroidWeb1%
 DOSKEY openWspHomeAndroidWeb2=code %WspHomeAndroidWeb2%
