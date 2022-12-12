@@ -21,6 +21,12 @@
 > `alias.cmd`파일을 해당 위치에 복붙
 
 
+#### Alias설정 - `pwsh`
+
+- <kbd>win</kbd> + <kbd>r</kbd> 누른 후 `powershell` 실행
+- 프롬트에서 프로젝트 경로로 이동
+- `Copy-Item -Path .\Microsoft.PowerShell_profile.ps1 -Destination $profile` 입력
+
 ---
 ## 😎My Preference(s)
 
@@ -28,7 +34,8 @@
 
 |cmd|description|
 |:---|:-----|	
-|`ls`|현 경로의 파일목록 출력|
+|`ls`|현 경로의 파일목록 출력
+|`clear`|새 창|
 |`sublime`|Sublime Text 호출|
 |`scrcpyDefault`|내가 원하는 설정값의 scrcpy호출|
 |`scrcpyRec`|화면녹화용 scrcpy호출|
