@@ -2,6 +2,7 @@
 
 :: Commands
 DOSKEY ls=dir /B $*
+DOSKEY pwd=echo %cd%
 DOSKEY clear=cls
 DOSKEY sublime=sublime_text $*
     ::sublime_text.exe is name of the executable. By adding a temporary entry to system path, we don't have to write the whole directory anymore.
