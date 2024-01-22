@@ -10,6 +10,7 @@
 #>
 
 # 사용자 설정 경로
+$env:PATH_ALAIS_HOME = $profile
 $env:PATH_ONNARA_ANDROID = "D:\development\android\OnnaraMobileAndroid"
 $env:GIT_LOG_FORMAT_DEFAULT = "%Cred%h%Creset %C(yellow)%d%Crest %s %Cgreen(%cr) %C(bold blue) %an %Creset"
 
@@ -18,6 +19,7 @@ Write-Host @"
                ENVIRONMENT VARIABLES
 ===================================================
 
+ [PATH_ALAIS_HOME]: $profile
  [PATH_ONNARA_ANDROID]: $env:PATH_ONNARA_ANDROID
  [GIT_LOG_FORMAT_DEFAULT]: $env:GIT_LOG_FORMAT_DEFAULT
 
@@ -58,30 +60,36 @@ function checkGit() {
 function g() { git }
 function gs() { git status }
 function gss() { git status --short }
-function ga() { 
+function ga() 
+{ 
     param([string] $target2Add="*")
     git add $target2Add
 }
-function gc() { 
+function gc() 
+{ 
     param([string] $flags)
     git commit $flags
 }
 function gb() { git branch -vv }
-function gf() { 
+function gf() 
+{ 
     param([string] $targetRepo="origin")
     git fetch $targetRepo
 }
-function glg() { 
+function glg() 
+{ 
     git log --abbrev-commit --graph --pretty=format:$env:GIT_LOG_FORMAT_DEFAULT
 }
-function gp() { 
+function gp() 
+{ 
     param(
         [string] $targetRepo="origin", 
         [string] $targetBranch="main"
     )
     git push $targetRepo $targetBranch
 }
-function gpl() { 
+function gpl() 
+{ 
      param(
         [string] $targetRepo="origin", 
         [string] $targetBranch="main"
@@ -97,25 +105,11 @@ function codeHWAW2() { code "$env:PATH_ONNARA_ANDROID\onnara02\src\main\assets" 
 
 
 # ADB 및 안드로이드 관련
-function scrcpyDefault()
-{
-    scrcpy -m 1024 --always-on-top
-}
-function scrcpyRec() 
-{
-    scrcpy -m 1024 --always-on-top --show-touches
-}
-function killTestbed() 
-{
-    adb shell am force-stop kr.go.mobile.testbed.iff
-}
+function scrcpyDefault() { scrcpy -m 1024 --always-on-top }
+function scrcpyRec() { scrcpy -m 1024 --always-on-top --show-touches }
+function killTestbed() { adb shell am force-stop kr.go.mobile.testbed.iff }
 
-
-
-function alias()
-{
-    notepad $profile
-}
+function alias() { notepad $profile }
 
 # 후처리
 $env:PATH += ";$env:UserProfile\scoop\apps\oh-my-posh\current\bin"

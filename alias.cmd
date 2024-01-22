@@ -87,7 +87,7 @@ ECHO.
 
 
 :: 개발환경 구성
-@DOSKEY cdWHA=D: ^&^& CD %PATH_ONNARA_ANDROID% $*
+@DOSKEY cdWHA=%PATH_ONNARA_ANDROID:~0,1%: ^&^& CD %PATH_ONNARA_ANDROID% $*
 @DOSKEY codeWHAW1=code %PATH_ONNARA_ANDROID%\onnara01\src\main\assets $*
 @DOSKEY codeWHAW2=code %PATH_ONNARA_ANDROID%\onnara02\src\main\assets $*
 
